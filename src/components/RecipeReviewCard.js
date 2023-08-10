@@ -30,6 +30,7 @@ export default function RecipeReviewCard({
         "&:hover": {
           transform: "scale(1.015)",
         },
+        marginBottom: "5px", // Add margin bottom of 5px
       }}
     >
       <Typography

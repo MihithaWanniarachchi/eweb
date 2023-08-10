@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 article {
@@ -12,14 +13,18 @@ article {
   width: 50px;
   height: 50px;
 }
+
 .cart_img {
   display: flex;
-  width: 400px;
+  align-items: center;
+}
+
+.cart_img img {
+  margin-right: 10px;
 }
 
 .cart_img p {
   font-weight: bold;
-  margin-left: 10px;
 }
 
 .cart_box {
@@ -27,51 +32,43 @@ article {
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
-  border-bottom: 2px solid skyblue;
-  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+  padding: 10px 0;
 }
 
-.cart_box div:nth-child(2) button {
-  padding: 5px 10px;
-  font-weight: bold;
-  margin-right: 5px;
-}
-
-.cart_box div:nth-child(3) button {
+.cart_box button {
   padding: 5px 10px;
   font-weight: bold;
   letter-spacing: 2px;
   border: none;
   outline: none;
   color: white;
-  background-color: rgb(232, 244, 10);
+  background-color: #ce2029; /* Change this to the navbar color */
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
-.cart_box div:nth-child(3) button:hover {
-  background-color: rgb(234, 18, 18);
+
+.cart_box button:hover {
+  background-color: black; /* Change this to the hover color */
 }
-.cart_box div:nth-child(3) span {
-  background-color: lightgreen;
+
+.cart_box span {
   padding: 5px 10px;
   border-radius: 5px;
-  margin-right: 10px;
+  font-weight: bold;
 }
 
 .total {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 2px solid black;
 }
 
-.total span:nth-child(1) {
-  font-size: 2rem;
-  color: skyblue;
+.total span {
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 2px;
-}
-
-.total span:nth-child(2) {
-  font-size: 2rem;
-  color: green;
-  font-weight: bold;
 }

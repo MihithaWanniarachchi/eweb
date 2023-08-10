@@ -20,7 +20,7 @@ export default function PaginationRounded({ setPage }) {
       </Stack>
       <div style={{ position: "fixed", bottom: 0, left: "50%", transform: "translateX(-50%)" }}>
         <Pagination
-          count={10}
+          count={12}
           variant="dark "
           shape="rounded"
           page={currentPage}

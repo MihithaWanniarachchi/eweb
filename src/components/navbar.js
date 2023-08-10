@@ -19,24 +19,14 @@ const Navbar = () => {
     <div className="navbar">
       <div className="nav_box">
         <span className="my_shop">
-          <Link to={`/`} style={{ color: "white", textDecoration: "none", fontWeight: "bolder", fontSize: "30px", marginLeft: "400px" }}>
-            E-commerce
+          <Link to={`/`} style={{ color: "white", textDecoration: "none", fontWeight: "bolder", fontSize: "30px"}}>
+            OnlinePay
           </Link>
-          <Link to={`/`} style={{ color: "white", textDecoration: "none", marginLeft: "40px", fontSize: "20px" }}>
+           <Link to={`/`} style={{ color: "white", textDecoration: "none", marginLeft: "40px", fontSize: "20px",marginLeft:"400px" }}>
             Products
           </Link>
         </span>
-        <div className="search-bar">
-          <input
-            type="text"
-            placeholder="Search products..."
-            value={searchTerm}
-            onChange={handleSearchInputChange}
-          />
-          <span className="search-icon">
-            <FontAwesomeIcon icon={faSearch} />
-          </span>
-        </div>
+        
         <div className="cart">
           <Link to={`/Cart`} style={{ textDecoration: "none", fontSize: "15px" }}>
             <span className="icons">
