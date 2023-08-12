@@ -32,8 +32,9 @@ article {
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   padding: 10px 0;
+  color:white;
 }
 
 .cart_box button {
@@ -57,6 +58,7 @@ article {
   padding: 5px 10px;
   border-radius: 5px;
   font-weight: bold;
+  color: white; /* Change this to white */
 }
 
 .total {
@@ -65,10 +67,12 @@ article {
   margin-top: 20px;
   padding-top: 10px;
   border-top: 2px solid black;
+  color: white;
 }
 
 .total span {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 2px;
+  color: white; /* Change this to white */
 }

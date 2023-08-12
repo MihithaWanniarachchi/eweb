@@ -116,74 +116,80 @@ const Main = ({ handleClick, handlePdp }) => {
   };
 
   return (
-    <div style={{ backgroundColor: "lightgrey" }}>
+    <div style={{ backgroundColor: "#222", color: "white" }}>
       {sortOption === "default" && (
         <div className="mt-5 d-flex justify-content-center">
           <PaginationRounded setPage={setPage} />
         </div>
       )}
-      <div className="mt-4 d-flex align-items-center" style={{ marginBottom: "50px" }}>
-        <label htmlFor="sortOption" className="me-2" style={{ fontWeight: "bold" }}>
-          Sort by:
-        </label>
-        <select
-          id="sortOption"
-          className="form-select form-select-sm"
-          style={{ maxWidth: "100px" }}
-          onChange={handleSortOptionChange}
-          value={sortOption}
-        >
-          <option value="default">Default</option>
-          <option value="price">Price</option>
-          <option value="category">Category</option>
-        </select>
-        {sortOption === "category" && (
-          <div className="ms-2">
-            {categories.map((category) => (
-              <button
-                key={category}
-                className="btn btn-primary btn-sm me-2"
-                onClick={() => fetchCategoryProducts(category)}
-                style={{ backgroundColor: "white", color: "black", border: `1px solid #ce2029` }}
-              >
-                {category}
-              </button>
-            ))}
+      <div className="d-flex flex-column align-items-center mt-4" style={{ marginBottom: "50px" }}>
+        <div className="d-flex align-items-center mb-2">
+          <label htmlFor="sortOption" className="me-2" style={{ fontWeight: "bold", color: "white" }}>
+            Sort by:
+          </label>
+          <select
+            id="sortOption"
+            className="form-select form-select-sm"
+            style={{ maxWidth: "100px", color: "black" }}
+            onChange={handleSortOptionChange}
+            value={sortOption}
+          >
+            <option value="default">Default</option>
+            <option value="price">Price</option>
+            <option value="category">Category</option>
+          </select>
+          {sortOption === "category" && (
+            <div className="ms-2">
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  className="btn btn-primary btn-sm me-2"
+                  onClick={() => fetchCategoryProducts(category)}
+                  style={{ backgroundColor: "white", color: "black", border: `1px solid #ce2029` }}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
+          )}
+          {sortOption !== "default" && (
+            <button
+              className="btn btn-dark btn-sm ms-2"
+              onClick={handleResetSorting}
+              style={{
+                padding: "5px 10px",
+                border: "none",
+                fontWeight: "bold",
+                backgroundColor: "#ce2029", // Match the search button color
+                color: "white",
+                borderRadius: "4px",
+                cursor: "pointer",
+              }}
+            >
+              Close
+            </button>
+          )}
+        </div>
+        {sortOption === "default" && (
+          <div className="d-flex align-items-center">
+            <input
+              type="text"
+              className="form-control form-control-sm ms-2"
+              placeholder="Search by model..."
+              value={searchQuery}
+              onChange={handleSearchChange}
+              style={{ maxWidth: "250px", background: "#333", color: "white" }}
+            />
+            <button
+              className="btn btn-primary btn-sm ms-2"
+              onClick={handleSearch}
+              disabled={searching}
+              style={{ backgroundColor: "#ce2029", borderColor: "#ce2029" }}
+            >
+              Search
+            </button>
           </div>
         )}
-        {sortOption !== "default" && (
-          <button
-            className="btn btn-dark btn-sm ms-2"
-            onClick={handleResetSorting}
-            style={{
-              padding: "5px 10px",
-              border: "none",
-              fontWeight: "bold",
-              backgroundColor: "black", // Change background color to black
-              color: "white",
-              borderRadius: "4px",
-              cursor: "pointer",
-            }}
-          >
-            Close
-          </button>
-        )}
-        <input
-          type="text"
-          className="form-control form-control-sm ms-2"
-          placeholder="Search by model..."
-          value={searchQuery}
-          onChange={handleSearchChange}
-          style={{ maxWidth: "200px" }}
-        />
-        <button
-          className="btn btn-primary btn-sm ms-2"
-          onClick={handleSearch}
-          disabled={searching}
-          style={{ backgroundColor: "#ce2029", borderColor: "#ce2029" }} // Change button color here
-        >
-          Search
-        </button>
       </div>
       <section>
         {isLoading ? (

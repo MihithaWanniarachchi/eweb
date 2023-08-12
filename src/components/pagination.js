@@ -9,26 +9,30 @@ export default function PaginationRounded({ setPage }) {
     setCurrentPage(value);
     setPage(value);
   };
-  console.log(`currentPage`, currentPage);
 
   return (
     <div>
       <Stack spacing={2}>
-        <div className="">
-          
-        </div>
+        {/* Any additional content you might want */}
       </Stack>
-      <div style={{ position: "fixed", bottom: 0, left: "50%", transform: "translateX(-50%)" }}>
+      <div
+        style={{
+          position: "fixed",
+          bottom: 0,
+          left: "50%",
+          transform: "translateX(-50%)",
+        }}
+      >
         <Pagination
           count={12}
-          variant="dark "
+          variant="dark"
           shape="rounded"
           page={currentPage}
           onChange={handleChange}
           style={{
-            color: "#ff0707",
-            border: "1px solid rgb(255 0 0 / 50 %)",
-            backgroundColor: "rgb(255 0 0 / 12 %)",
+            color: "white", // Set the color to white
+            border: "1px solid rgba(255, 255, 255, 0.5)", // Adjust the border color
+            backgroundColor: "grey", // Adjust the background color
           }}
         />
       </div>

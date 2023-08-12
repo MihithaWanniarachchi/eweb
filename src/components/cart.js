@@ -45,7 +45,7 @@ const Cart = () => {
           </div>
         </div>
       ))}
-      <div className="text-dark d-flex justify-content-between mt-4">
+      <div className="text-light d-flex justify-content-between mt-4">
         <h3>Total Price of your Cart</h3>
         <Button className="btn-dark">
           <span>$  {price}</span>

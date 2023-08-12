@@ -10,7 +10,7 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;body {
-  background-color: grey;
+  background-color: black;
 }
 
 }
@@ -38,12 +38,12 @@ section {
   font-weight: bold;
 }
 .details p:nth-child(2) {
-  color: grey;
+  color: black;
   font-size: 0.8rem;
 }
 .details p:nth-child(3) {
   font-weight: bold;
-  color: grey;
+  color: black;
 }
 .details {
   margin-top: 10px;
@@ -76,5 +76,5 @@ section {
 }
 
 body {
-  background-color: lightgray;
+  background-color: black;
 }
