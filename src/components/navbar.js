@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="nav_box">
         <span className="my_shop">
           <Link to={`/`} style={{ color: "white", textDecoration: "none", fontWeight: "bolder", fontSize: "30px"}}>
-            OnlinePay
+            QuickMart
           </Link>
            <Link to={`/`} style={{ color: "white", textDecoration: "none", marginLeft: "40px", fontSize: "20px",marginLeft:"400px" }}>
             Products
@@ -35,13 +35,7 @@ const Navbar = () => {
             <span>{lengthItems?.length}</span>
           </Link>
         </div>
-        {/* <div className="profile">
-          <Link to={``} style={{ textDecoration: "none", color: "white", marginLeft: "40px", fontSize: "20px" }}>
-            <span className="mx-5 text-white" style={{ fontSize: "20px" }}>
-              User Name <span className="icons"><FontAwesomeIcon icon={faUser} /></span>
-            </span>
-          </Link>
-        </div> */}
+        
       </div>
     </div>
   );

@@ -22,15 +22,15 @@ export default function RecipeReviewCard({
       sx={{
         maxWidth: 330,
         marginRight: "auto",
-        marginTop: "5px", // Adjust the distance from the top
-        marginBottom: "5px", // Adjust the distance from the bottom
-        boxShadow: "0px 0px 15px grey", // Change the shadow color to black
-        borderRadius: 5, // Add a slight border radius to round the corners
+        marginTop: "5px", 
+        marginBottom: "5px", 
+        boxShadow: "0px 0px 15px grey",
+        borderRadius: 5,
         transition: "transform 0.2s ease-in-out",
         "&:hover": {
           transform: "scale(1.015)",
         },
-        marginBottom: "5px", // Add margin bottom of 5px
+        marginBottom: "5px",
       }}
     >
       <Typography
@@ -38,7 +38,7 @@ export default function RecipeReviewCard({
         component="div"
         sx={{ marginTop: 2, textAlign: "center", fontWeight: "bold" }}
       >
-        {title} {/* Display the title name */}
+        {title} {}
       </Typography>
       <Link to={`productDetails`}>
         <CardMedia
@@ -64,11 +64,11 @@ export default function RecipeReviewCard({
       <CardActions
         sx={{
           display: "flex",
-          flexDirection: "column", // Display elements vertically
-          alignItems: "center", // Center items horizontally
+          flexDirection: "column", 
+          alignItems: "center", 
         }}
       >
-        <BasicRating rating={rating} /> {/* Display the rating above */}
+        <BasicRating rating={rating} />
         <LoadingButton
           variant="outlined"
           sx={{

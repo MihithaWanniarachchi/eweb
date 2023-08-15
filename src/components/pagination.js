@@ -13,7 +13,7 @@ export default function PaginationRounded({ setPage }) {
   return (
     <div>
       <Stack spacing={2}>
-        {/* Any additional content you might want */}
+       
       </Stack>
       <div
         style={{
@@ -24,15 +24,15 @@ export default function PaginationRounded({ setPage }) {
         }}
       >
         <Pagination
-          count={12}
-          variant="dark"
+          count={10}
+          variant="light"
           shape="rounded"
           page={currentPage}
           onChange={handleChange}
           style={{
-            color: "white", // Set the color to white
-            border: "1px solid rgba(255, 255, 255, 0.5)", // Adjust the border color
-            backgroundColor: "grey", // Adjust the background color
+            color: "#333",            // Dark text color
+    backgroundColor: "#fff",  // Light background color
+    border: "1px solid #ddd", 
           }}
         />
       </div>

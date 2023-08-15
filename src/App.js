@@ -21,7 +21,7 @@ function App() {
     setCart([...cart, item]);
     try {
       dispatch(addcartItem(item));
-      toast.success(`Added to Cart`);
+     // toast.success(`Added to Cart`);
     } catch (error) {
       toast.error(error.message);
     }

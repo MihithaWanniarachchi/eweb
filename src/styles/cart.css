@@ -44,21 +44,21 @@ article {
   border: none;
   outline: none;
   color: white;
-  background-color: #ce2029; /* Change this to the navbar color */
+  background-color: #ce2029; 
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .cart_box button:hover {
-  background-color: black; /* Change this to the hover color */
+  background-color: black; 
 }
 
 .cart_box span {
   padding: 5px 10px;
   border-radius: 5px;
   font-weight: bold;
-  color: white; /* Change this to white */
+  color: white; 
 }
 
 .total {
@@ -74,5 +74,5 @@ article {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 2px;
-  color: white; /* Change this to white */
+  color: white; 
 }

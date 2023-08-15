@@ -55,22 +55,7 @@ section {
   background-color: rgb(230, 223, 28);
   outline: none;
 }
-/* .edit {
-  padding: 5px 10px;
-  border: none;
-  font-weight: bold;
-  background-color: black;
-  outline: none;
-  color: white;
-}
-.edit:hover {
-  padding: 5px 10px;
-  border: none;
-  font-weight: bold;
-  background-color: rgb(255, 255, 255);
-  outline: auto;
-  color: black;
-} */
+
 .details button:hover {
   outline: auto;
 }
@@ -78,3 +63,5 @@ section {
 body {
   background-color: black;
 }
+
+

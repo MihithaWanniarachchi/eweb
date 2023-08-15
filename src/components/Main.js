@@ -160,7 +160,7 @@ const Main = ({ handleClick, handlePdp }) => {
                 padding: "5px 10px",
                 border: "none",
                 fontWeight: "bold",
-                backgroundColor: "#ce2029", // Match the search button color
+                backgroundColor: "#ce2029", 
                 color: "white",
                 borderRadius: "4px",
                 cursor: "pointer",
